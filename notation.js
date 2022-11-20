@@ -51,7 +51,7 @@
 
 
                     // Sur changement de la valeur de la liste déroulante
-                    searchnotes.addEventListener("change", function () {
+                        searchnotes.addEventListener("change", function () {
 
 
                         // Récupère la valeur de l'option sélectionnée

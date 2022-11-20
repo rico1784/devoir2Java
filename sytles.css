@@ -32,6 +32,7 @@ BUTTON THREE
 */
 button{
     display: block;
+    margin: 10px auto;
     width: 200px;
     height: 40px;
     line-height: 40px;
