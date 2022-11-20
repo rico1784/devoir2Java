@@ -23,11 +23,11 @@
                     if (form) {
                         location.reload();
                     } else {
-                        var formsearch = document.createElement("form");
+                        var form = document.createElement("form");
                         var select = document.createElement("select");
-                        formsearch.id = "Search"
-                        formsearch.action = "Search.html";
-                        formsearch.method = "GET";
+                        form.id = "Search"
+                        form.action = "Search.html";
+                        form.method = "GET";
                         select.name = "notes";
                         select.id = "notes"
                     }
