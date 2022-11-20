@@ -19,12 +19,18 @@
 
 
                     // Création des éléments du BODY
-                    var form = document.createElement("form");
-                    var select = document.createElement("select");
-                    form.action = "search.php";
-                    form.method = "post";
-                    select.name = "notes";
-                    select.id = "notes"
+                    var form = document.getElementById('Search')
+                    if (form) {
+                        location.reload();
+                    } else {
+                        var formsearch = document.createElement("form");
+                        var select = document.createElement("select");
+                        formsearch.id = "Search"
+                        formsearch.action = "Search.html";
+                        formsearch.method = "GET";
+                        select.name = "notes";
+                        select.id = "notes"
+                    }
 
                     for (const val of array) {
                         var option = document.createElement("option");
@@ -55,17 +61,22 @@
 
                         // Création de l'alerte avec le résultat
                         var text = ("La notation américaine pour la note " + resultat.classic + " est " + resultat.usa);
-                        alert(text);
+                        if (text !== "") {
+                            alert(text);
+                        }
+
+                        //
+                        var form = document.getElementById("Search");
+                        var xmlhttp = new XMLHttpRequest();
+                        xmlhttp.open("GET",form.action,true);
+                        xmlhttp.send();
                     });
                 });
             });
-
-
-
-
         }
     };
     exemple.init();
 
-
 })();
+
+
