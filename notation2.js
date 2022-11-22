@@ -1,11 +1,11 @@
 (function () {
+
     var formText = {
         init: function () {
             window.addEventListener('load', function () {
                 const element = document.getElementById('link1');
                 const button1 = document.getElementById('button1');
                 const close = document.getElementById('close');
-
                 element.addEventListener('click', function (event) {
                     event.preventDefault();
                     var xmlhttp = new XMLHttpRequest();
