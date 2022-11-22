@@ -9,7 +9,7 @@
 </head>
 <body id="body">
 
-<div><button id="button1"><a id="link1" href="textForm.php">Rechercher notes</a></div></button>
+<div><button id="button1"><a id="link1" href="textForm.php">Rechercher notes</a></button></div>
 <div id="formText"></div>
 <div id="resultat"></div>
 <a id="close" href="#" style="display: none;">fermer</a>
